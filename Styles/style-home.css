@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container-fluid{
+  align-items: center;
+}
+
+.paragrafo{
+  font-weight: bold !important;
+}
+
+.navbar{
+  background-color: #3858E9;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand{
+  gap: 5px;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link{
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  color: white !important;
+  
+}
+
+.nav-link:hover {
+  color: #fff5c0 !important;
+}
+
+.login-btn{
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 4px;
+  border-radius: 2px;
+  padding: 5px;
+  align-items: center;
+  border-style: none;
+}
+
+main{
+  padding-bottom: 8rem;
+}
+
+
+.content-principal{
+  background-color: #3858E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.content-main{
+  padding: 3rem;
+  
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  background-color: white !important;
+  color: black !important;
+  padding: 10px !important;
+  border-radius: 20px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.titulo-main{
+  font-size: 60px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.paragrafo-main{
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+
+
+.img-hero{
+  width: 35%;
+  height: 35%;
+}
+
+.content-secundario{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-secundario{
+  font-size: 50px;
+  align-items: center;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+.card{
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+} 
+
+.card-body{
+  width: 20rem;
+  height: 13rem;
+}
+
+.card-title{
+  margin: auto;
+  padding: 5px;
+  font-size: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text{
+  margin: auto;
+  padding: 5px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-top{
+  padding: 5px;
+  width: 6rem !important;
+  height: 6rem !important;
+}
+
+
+.botao-secundario{
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-terciario{
+  margin: auto;
+  background-color: #3858E9;
+  width: 75rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-terciario{
+  font-size: 40px;
+  color: white;
+  align-items: center;  
+  justify-content: center; 
+}
+
+.paragrafo-terciario{
+  font-size: 30px;
+  color: white;
+  align-items: center;  
+  justify-content: center;  
+  margin: 20px;
+} 
+
+.botao-terciario{
+  padding-top: 4rem;
+}
+
+footer{
+  background-color: #101517;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-footer{
+  font-size: 30px;
+  color: white;
+ 
+  margin: 20px;
+} 
+
+.paragrafo-footer{
+  width: 40rem;
+  font-size: 16px;
+  color: white;
+}
+
+.direitos{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.paragrafo-direitos{
+  font-size: 13 px;
+  color: white;
+} 
+
+
+
+
+
+
+
+/* Responsividade geral */
+@media (max-width: 1200px) {
+  .content-principal {
+    gap: 5rem;
+  }
+
+  .content-terciario {
+    width: 90%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .content-principal {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .content-main {
+    padding: 1rem;
+  }
+
+  .titulo-main {
+    font-size: 40px;
+  }
+
+  .paragrafo-main {
+    font-size: 20px;
+  }
+
+  .img-hero {
+    width: 70%;
+    height: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card-body {
+    width: 100%;
+  }
+
+  .content-terciario {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .titulo-terciario,
+  .paragrafo-terciario {
+    text-align: center;
+  }
+
+  .paragrafo-footer {
+    width: 90%;
+    text-align: center;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  .titulo-main {
+    font-size: 30px;
+  }
+
+  .paragrafo-main {
+    font-size: 18px;
+  }
+
+  .btn {
+    padding: 8px 20px !important;
+    font-size: 16px !important;
+  }
+
+  .titulo-secundario {
+    font-size: 30px;
+  }
+
+  .card-img-top {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  .titulo-terciario {
+    font-size: 28px;
+  }
+
+  .paragrafo-terciario {
+    font-size: 20px;
+  }
+
+  .titulo-footer {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .paragrafo-direitos {
+    font-size: 12px;
+  }
+}
