@@ -140,7 +140,7 @@ main{
 
 .card-body{
   width: 20rem;
-  height: 13rem;
+  height: 15rem;
 }
 
 .card-title{
@@ -242,6 +242,7 @@ footer{
 
 /* Responsividade geral */
 @media (max-width: 1200px) {
+
   .content-principal {
     gap: 5rem;
   }
@@ -249,6 +250,7 @@ footer{
   .content-terciario {
     width: 90%;
   }
+
 }
 
 /* Tablets */
@@ -258,6 +260,23 @@ footer{
     text-align: center;
     gap: 2rem;
     padding: 2rem;
+  }
+
+  #navbarNav {
+    align-items: left;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espaçamento entre os itens */
+    margin-right: auto; /* Empurra o login para a direita */
+  }
+
+  .login {
+    margin-left: auto; /* Alinha à direita */
   }
 
   .content-main {
@@ -287,6 +306,10 @@ footer{
 
   .card-body {
     width: 100%;
+  }
+
+  .botao-secundario {
+    padding-top: 1rem;
   }
 
   .content-terciario {

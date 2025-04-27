@@ -93,3 +93,14 @@ input {
   text-decoration: none;
   font-weight: bold;
 }
+
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  } 
+  
+  .login-container {
+    width: 80%;
+  }
+}
