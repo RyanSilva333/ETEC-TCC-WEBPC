@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 80px;
   background-color: red;
   margin-left: 200px; /* Lado esquerdo livre por causa do menu lateral */
   padding-top: 200px; /* Espaço para o menu + filtro fixos no topo */
@@ -130,7 +130,23 @@ nav {
   gap: 1rem;
 }
  
+.btn{
+  background-color: black !important;
+  border-radius: 20px !important;
+  color: white;
+  border-color: white !important;
+}
 
+.btn-mondal{
+  background-color: white !important;
+  border-radius: 20px !important;
+  color: black;
+  border-color: black !important;
+}
+
+.modal-content{
+  background-color: #121212 !important;
+}
 
 
 /* --- RESPONSIVO --- */
