@@ -7,7 +7,7 @@ body {
 
 main {
   margin-top: 80px;
-  background-color: red;
+  background-color: #2D2D2D;
   margin-left: 200px; /* Lado esquerdo livre por causa do menu lateral */
   padding-top: 200px; /* Espaço para o menu + filtro fixos no topo */
   padding: 20px; /* Opcional: para ter respiro interno */
@@ -114,15 +114,34 @@ nav {
     color: white;
 }
 
+/*---------Perfil --------*/
+
+
 .perfil{
+  color: #fff;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.img-perfil{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .perfil-item{
   display: flex;
+  align-items: center;
   gap: 10rem;
 }	
+
+.nome-perfil{
+  font-weight: bold;
+  
+}
+
+
 
 /*---------ModalEdit --------*/
 .modal-body{
@@ -130,24 +149,55 @@ nav {
   flex-direction: column;
   gap: 1rem;
 }
+
+.modal-title{
+  text-align: center;
+  color: white;
+}
+
+
  
 .btn{
   background-color: black !important;
   border-radius: 20px !important;
-  color: white;
+  color: white !important;
   border-color: white !important;
 }
 
 .btn-mondal{
   background-color: white !important;
   border-radius: 20px !important;
+  width: 100px !important;
   color: black;
   border-color: black !important;
+  padding: 6px !important;
+}
+
+.btn-mondal:hover{
+  background-color: #e3e3e3 !important;
+  transition: all 0.3s ease;
 }
 
 .modal-content{
   background-color: #121212 !important;
 }
+
+#editarbio{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-edit{
+  background-color: #121212 !important;
+  color: white !important;
+  padding: 10px ;
+}
+
+label{
+  color: white !important;
+}
+
 
 /*---------ModalEdit END--------*/
 
@@ -302,3 +352,6 @@ nav {
     }
   }
 
+
+
+  

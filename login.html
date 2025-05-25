@@ -17,27 +17,31 @@
         <div class="login-container">
             <h2>Bem-Vindo</h2>
             <p>Junte-se a nós e conquiste o mundo!</p>
-            
-            <div class="input-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="input-group">
-                <label for="password">Senha</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            
-            <div class="forgot-password">
-                <a href="#">Esqueceu a senha?</a>
-            </div>
-            
-            <button onclick="window.location.href='./PC.html'" class="login-button">Entrar</button>
-            
-            <p class="register-link">Precisando se registrar? <a href="./cadastro.html">Registre-se</a></p>
+
+            <form action="" id="loginForm"> 
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+                
+                <button type="submit" class="login-button">Entrar</button>
+                
+                <p class="register-link">Precisando se registrar? <a href="./cadastro.html">Registre-se</a></p>
+            </form>
+           
         </div>
 
     </main>
+    <script src="./Scripts/login.js"></script>
     
 </body>
 </html>
