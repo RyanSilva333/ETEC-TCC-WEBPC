@@ -7,8 +7,10 @@
         document.getElementById("userProfile").innerText = `${parsedUser.name}`;
         document.getElementById("idProfile").innerText = `ID: ${parsedUser.id}`;
         document.getElementById("bioProfile").innerText = `${parsedUser.bio}`;
+        document.getElementById("estiloJogo").innerText = `${parsedUser.estilo}`;
         document.getElementById("userEdit").value = parsedUser.name;
         document.getElementById("bioEdit").value = parsedUser.bio;
+        document.getElementById("estiloEdit").value = parsedUser.estilo;
         document.getElementById("logoutButton").classList.remove("hidden");
       } else {
         document.getElementById(
@@ -20,6 +22,7 @@
   function atualizarUsuario() {
     const novoNome = document.getElementById("userEdit").value;
     const novaBio = document.getElementById("bioEdit").value;
+    const novoEstilo = document.getElementById("estiloEdit").value;
     const user = localStorage.getItem("user");
 
     if (user) {
@@ -29,6 +32,7 @@
       // Atualiza o nome
       parsedUser.name = novoNome;
       parsedUser.bio = novaBio;
+      parsedUser.estilo = novoEstilo;
 
       // Salva de novo no localStorage
       localStorage.setItem("user", JSON.stringify(parsedUser));
@@ -46,3 +50,9 @@
 
 
 
+  function mostrarCard(id, checkbox) {
+    const card = document.getElementById(id);
+    card.style.display = checkbox.checked ? "flex" : "none";
+  }
+
+  

@@ -114,32 +114,13 @@ nav {
     color: white;
 }
 
-/*---------Perfil --------*/
+/*---------Mensagens --------*/
 
-
-.perfil{
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.area-mensagens{
+  color: white;
+  text-align: center;
 }
 
-.img-perfil{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.perfil-item{
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}	
-
-.nome-perfil{
-  font-weight: bold;
-  
-}
 
 
 

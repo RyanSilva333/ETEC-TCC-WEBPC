@@ -16,7 +16,8 @@ document
             name: name,
             username: username,
             password: password,
-            bio: ""
+            bio: "",
+            estilo: ""
           };
 
           localStorage.setItem(username, JSON.stringify(user));
