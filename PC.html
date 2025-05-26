@@ -33,7 +33,7 @@
     <main>
         <div class="menu">
             <div class="menu-item">
-                <a href="#" class="active-procurar" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>Procurar jogadores</a>
+                <a href="#" class="active-procurar"  data-bs-toggle="modal" data-bs-target="#MondalSearch" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#FFFFFF"><path d="M444-288h72v-156h156v-72H516v-156h-72v156H288v72h156v156Zm36.28 192Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>Procurar jogadores</a>
             </div>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -83,41 +83,54 @@
               </li>
 
         </div>
-
-        <div class="main-area">
-          <h1>teste</h1>
+        
+        <div class="main-area" >
+          <h1>Pessoas Procurando jogadores:</h1>
           <div class="area-cont">
-            <p>AREA 1</p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus iste accusamus corporis illo expedita numquam quas quidem architecto error voluptate inventore obcaecati, velit consequatur molestias voluptatem temporibus at dolor sunt facilis dicta odit exercitationem, necessitatibus magnam. Incidunt ipsum cum dolor quia quidem, hic vel atque voluptatibus molestiae repellat reiciendis blanditiis earum necessitatibus officiis mollitia reprehenderit eum fuga voluptatem eligendi voluptates excepturi quae veritatis qui dolore! Ipsum quaerat, nihil asperiores odio eius dolore iure, voluptas reprehenderit tempore nostrum esse quod commodi voluptate tenetur eaque suscipit sed alias modi repellendus rem debitis voluptates eum voluptatem. Fugiat asperiores voluptatem tenetur dolorem excepturi?
+            <div class="area-game">
+              <p>Game</p>
+              <h2 id="gameName">#NAMEGAME</h2>
+            </div>  
+            <div class="area-tipo">
+              <p>Tipo de Partida</p>
+              <h2 id="partida">#Partida</h2>
+            </div>
+            <div class="area-pessoas">
+              <p>Pessoas</p>
+              <h2 id="contPessoas">0/0</h2>
+            </div>
           </div>
 
-          <div class="area-cont">
-            <p>AREA 2</p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus iste accusamus corporis illo expedita numquam quas quidem architecto error voluptate inventore obcaecati, velit consequatur molestias voluptatem temporibus at dolor sunt facilis dicta odit exercitationem, necessitatibus magnam. Incidunt ipsum cum dolor quia quidem, hic vel atque voluptatibus molestiae repellat reiciendis blanditiis earum necessitatibus officiis mollitia reprehenderit eum fuga voluptatem eligendi voluptates excepturi quae veritatis qui dolore! Ipsum quaerat, nihil asperiores odio eius dolore iure, voluptas reprehenderit tempore nostrum esse quod commodi voluptate tenetur eaque suscipit sed alias modi repellendus rem debitis voluptates eum voluptatem. Fugiat asperiores voluptatem tenetur dolorem excepturi?
-          </div>
         </div>
-         <script src="./Scripts/PC.js"></script>
+         
     </main>
 
     <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="MondalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content-search">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Procurar Jogadores</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <h2>Selecionar:</h2>
       <div class="modal-body">
-        ...
+          <select class="form-select" aria-label="Default select example" id="SelecioneGame">
+            <option selected>.....</option>
+            <option value="Casual">Casual</option>
+            <option value="Competitiva">Competitiva</option>
+            <option value="RPG">RPG</option>
+          </select>
+          <button>Procurar</button>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn btn-primary">Procurar!</button>
       </div>
     </div>
   </div>
 </div>
-
+<script src="./Scripts/PC.js"></script>
 
 </body>
 </html>
