@@ -71,6 +71,27 @@ main{
   padding-bottom: 8rem;
 }
 
+.content-secundario-saiba{
+  margin: auto;
+  background-color: #132fad;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 60rem;
+}
+
+.titulo-secundario-saiba{
+  color: whitesmoke;
+  font-size: 45px;
+}
+
+.titulo-secundario-func{
+  color: whitesmoke;
+  font-size: 45px;
+}
 
 .content-principal{
   background-color: #132fad;
