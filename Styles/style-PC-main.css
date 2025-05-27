@@ -133,7 +133,7 @@ nav {
 .btn{
   background-color: black !important;
   border-radius: 20px !important;
-  color: white;
+  color: white !important;
   border-color: white !important;
 }
 
@@ -154,29 +154,51 @@ nav {
 
 .area-game{
   padding: 10px;
-  background-color: gray;
+  background-color: rgb(128, 128, 128, 0.6);
   border-radius: 5px;
+  width: 20%;
 }
 
 .area-tipo{
   padding: 10px;
-  background-color: gray;
+  background-color: rgb(128, 128, 128, 0.6);
   border-radius: 5px;
   width: 50%;
 }
 
 .area-pessoas{
   padding: 10px;
-  background-color: gray;
   border-radius: 5px;
   width: 20%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.btnCont{
+  
+  align-items: center;
+  text-align: center;
+  width: 15rem;
+}
+
+
+#alertBox{
+  padding-top: 2rem;
 }
 
 /*---------ModalSearch --------*/
-.modal-content-search{
-  background-color: green;
+
+.modal-title{
+  color: white;
+}
+.modal-content{
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
+.modal-body{
+  color: white   ;
+}
 
 
 /*---------ModalSearch END --------*/
@@ -187,7 +209,7 @@ nav {
 
 @media (max-width: 768px) { 
     main {
-      background-color: red;
+      background-color: #2D2D2D;
       margin-left: 0px; /* Lado esquerdo livre por causa do menu lateral */
       padding-top: 15px !important; /* Espaço para o menu + filtro fixos no topo */
       padding: 15px; /* Opcional: para ter respiro interno */
@@ -200,7 +222,7 @@ nav {
       left: 0;
       width: 100%; /* Ocupa toda a largura */
       height: auto; /* Altura automática */
-      padding: 10px 0;
+      padding: 10px 0;                                  
       z-index: 1000; /* Garante que fique acima de outros elementos */
     }
   
@@ -289,7 +311,63 @@ nav {
 
     .main-area{
       padding: 1px;
+      padding-top: 2rem;
+      
     }
+
+    .main-area h1{
+      padding: 2px;
+      font-size: 22px;
+      font-weight: bold;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .area-cont{
+      align-items: center;
+      background-color: rgb(70, 70, 70, 0.8);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .area-game{
+      padding: 10px;
+      background-color: gray;
+      border-radius: 5px;
+      width: 20rem;
+    }
+    
+    .area-tipo{
+      padding: 10px;
+      background-color: gray;
+      border-radius: 5px;
+      width: 20rem;
+    }
+    
+    .area-pessoas{
+      padding: 10px;
+      border-radius: 5px;
+      width: 20rem;
+    }
+
+    p{
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .gameName{
+      text-align: center;
+    }
+    
+    .btnCont{
+      width: 10rem !important;
+    }
+
+
+
   }
   
   /* Ajuste adicional para telas muito pequenas */

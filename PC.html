@@ -83,53 +83,111 @@
               </li>
 
         </div>
-        
-        <div class="main-area" >
-          <h1>Pessoas Procurando jogadores:</h1>
+        <h1 style="color: aliceblue;">Pessoas Procurando jogadores:</h1>
+        <div class="main-area"  id="cs2Card" style="display: none;">
           <div class="area-cont">
             <div class="area-game">
               <p>Game</p>
-              <h2 id="gameName">#NAMEGAME</h2>
+              <h2 class="gameName" id="gameName">CS2</h2>
             </div>  
             <div class="area-tipo">
               <p>Tipo de Partida</p>
-              <h2 id="partida">#Partida</h2>
+              <h2 class="gameName" id="partida">Competitiva</h2>
             </div>
             <div class="area-pessoas">
-              <p>Pessoas</p>
-              <h2 id="contPessoas">0/0</h2>
-            </div>
+                <button type="button" class="btn btnCont" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Entrar
+                </button>
+             </div>
           </div>
-
         </div>
          
+        <div class="main-area"  id="GTACard" style="display: none">
+          <div class="area-cont">
+            <div class="area-game">
+              <p>Game</p>
+              <h2 class="gameName" id="gameName">GTA Online</h2>
+            </div>  
+            <div class="area-tipo">
+              <p>Tipo de Partida</p>
+              <h2  class="gameName" id="partida">Competitiva</h2>
+            </div>
+            <div class="area-pessoas">
+                <button type="button" class="btn btnCont" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Entrar
+                </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-area" id="ValorantCard" style="display: none;" >
+            <div class="area-cont">
+              <div class="area-game">
+                <p>Game</p>
+                <h2 class="gameName" id="gameName">Valorant</h2>
+              </div>  
+              <div class="area-tipo">
+                <p>Tipo de Partida</p>
+                <h2 class="gameName" id="partida">Competitiva</h2>
+              </div>
+              <div class="area-pessoas">
+                
+                <button type="button" class="btn btnCont" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Entrar
+                </button>
+              </div>
+            </div>
+        </div>
     </main>
 
     <!-- Modal -->
+
+    
+<!-- Modal -->
 <div class="modal fade" id="MondalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content-search">
+    <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">Procurar Jogadores</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <h2>Selecionar:</h2>
       <div class="modal-body">
-          <select class="form-select" aria-label="Default select example" id="SelecioneGame">
-            <option selected>.....</option>
-            <option value="Casual">Casual</option>
-            <option value="Competitiva">Competitiva</option>
-            <option value="RPG">RPG</option>
-          </select>
-          <button>Procurar</button>
+        <h2>Olá, <span id="userProfile"></span></h2>
+        <form action="" id="selectgame">
+        <label>Game:</label>
+            <select class="form-select" aria-label="Default select example" id="estiloEdit">
+              <option selected>.....</option>
+              <option value="CS2">CS2</option>
+              <option value="GTA">GTA</option>
+              <option value="VALORANT">VALORANT</option>
+            </select>
+
+            <label>Estilo de Jogo:</label>
+            <select class="form-select" aria-label="Default select example" id="estiloEdit">
+              <option selected>.....</option>
+              <option value="Casual">Casual</option>
+              <option value="Competitiva">Competitiva</option>
+              <option value="RPG">RPG</option>
+            </select>
+
+            
+         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Procurar!</button>
+        <button type="button" class="btn btn-primary"  id="procurarBtn" onclick="mostrarCard2()">Procurar!</button>
+        
       </div>
     </div>
+    <div id="alertBox"></div>
   </div>
 </div>
+
+
+
+
+
+    
 <script src="./Scripts/PC.js"></script>
 
 </body>

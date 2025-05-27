@@ -5,6 +5,7 @@ document
           const name = document.getElementById("nickname").value;
           const username = document.getElementById("email").value;
           const password = document.getElementById("password").value;
+          const alertBox = document.getElementById("alertBox");
 
           if (!name || !username || !password) {
             alert("Por favor, preencha todos os campos.");
@@ -21,7 +22,10 @@ document
           };
 
           localStorage.setItem(username, JSON.stringify(user));
-          alert("Registration successful! Please login.");
+          alertBox.innerHTML = `<div class="alert alert-success" role="alert">Carregado com sucesso!</div>`;
+          setTimeout(() => {
+            alertBox.innerHTML = "";
+          }, 2500);
           window.location.href = "login.html";
 
           function gerarID(nome) {

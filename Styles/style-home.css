@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+
+
+/* Cores Importantes
+background-color: #3858E9;
+*/
+
 *{
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
@@ -10,18 +16,23 @@
   align-items: center;
 }
 
+.connect{
+  color: lightcoral;
+}
+
 .paragrafo{
   font-weight: bold !important;
 }
 
 .navbar{
-  background-color: #3858E9;
+  background-color: #132fad;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 
 .navbar-brand{
+  color: white !important;
   gap: 5px;
   display: flex ;
   align-items: center;
@@ -62,16 +73,15 @@ main{
 
 
 .content-principal{
-  background-color: #3858E9;
+  background-color: #132fad;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 
 .content-main{
   padding: 3rem;
-  
   padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
@@ -106,8 +116,8 @@ main{
 
 
 .img-hero{
-  width: 35%;
-  height: 35%;
+  width: 39%;
+  height: 39%;
 }
 
 .content-secundario{
@@ -167,7 +177,8 @@ main{
 
 
 .botao-secundario{
-  padding-top: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +186,7 @@ main{
 
 .content-terciario{
   margin: auto;
-  background-color: #3858E9;
+  background-color: #132fad;
   width: 75rem;
   border-radius: 1rem;
   padding: 2rem;

@@ -154,7 +154,7 @@ nav {
 
 @media (max-width: 768px) { 
     main {
-      background-color: red;
+      background-color: #2D2D2D;
       margin-left: 0px; /* Lado esquerdo livre por causa do menu lateral */
       padding-top: 50px !important; /* Espaço para o menu + filtro fixos no topo */
       padding: 30px; /* Opcional: para ter respiro interno */

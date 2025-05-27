@@ -49,6 +49,36 @@
 }
 
 
+function mostrarCard2(){
+  document.getElementById("procurarBtn").addEventListener("click", function () {
+    const valorSelecionado = document.getElementById("estiloEdit").value;
+    const alertBox = document.getElementById("alertBox");
+  
+    // Mostra o card selecionado
+    if (valorSelecionado === "CS2") {
+      document.getElementById("cs2Card").style.display = "flex";
+      alertBox.innerHTML = `<div class="alert alert-success" role="alert">Carregado com sucesso!</div>`;                                                                  
+      setTimeout(() => {
+        alertBox.innerHTML = "";                                            
+      }, 2500);
+    } else if (valorSelecionado === "GTA") {
+      document.getElementById("GTACard").style.display = "flex";
+      alertBox.innerHTML = `<div class="alert alert-success" role="alert">Carregado com sucesso!</div>`;
+      setTimeout(() => {
+        alertBox.innerHTML = "";
+      }, 2500);
+    } else if (valorSelecionado === "VALORANT") {
+      document.getElementById("ValorantCard").style.display = "flex";
+      alertBox.innerHTML = `<div class="alert alert-success" role="alert">Carregado com sucesso!</div>`;
+      setTimeout(() => {
+        alertBox.innerHTML = "";
+      }, 2500);
+    }
+
+  });
+}
+
+
 
   function mostrarCard(id, checkbox) {
     const card = document.getElementById(id);
